@@ -106,7 +106,7 @@ uint32_t bcd_9complement(uint32_t d) {
     uint32_t d1 = 0 ;
 
 // finish this function
-    
+     
     return d1 ;
 }
 
