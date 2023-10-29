@@ -1,0 +1,61 @@
+https://x-access-token:AP4Z5DXIX6HZWCVV3FIG5HLFDOMANAVPNFXHG5DBNRWGC5DJN5XF62LEZYBGLU7SWFUW443UMFWGYYLUNFXW4X3UPFYGLN2JNZ2GKZ3SMF2GS33OJFXHG5DBNRWGC5DJN5XA@github.com/csc-coursework/project-2-sofia-frenk.git
+commit 33970523eaabb4d65f36c2631eacbf7a8c90c593
+Author: sofia-frenk <sofia.frenk15@gmail.com>
+Date:   Tue Sep 12 13:53:45 2023 -0400
+
+    Is this going to work?
+make test
+make[1]: Entering directory `C:/ROOT/7 - UM/PHD/CSC 421/Grading/Project 2-10-03-2023-12-21-47/sofia-frenk'
+gcc -D IS_SUB -o bcd-add bcd-add.c
+bcd-add 1 2    > test.out
+bcd-add 9 8    >> test.out
+bcd-add 13 10  >> test.out
+bcd-add 17  14 >> test.out
+bcd-add 30  20 >> test.out
+bcd-add 100 12 >> test.out
+bcd-add 123 87 >> test.out
+bcd-add 301 1  >> test.out
+bcd-add 001 1  >> test.out
+bcd-add 4 4    >> test.out
+fc test.out test.ref
+Comparing files test.out and TEST.REF
+***** test.out
+1 + 2 = 3
+1 - 2 = ???????9
+9 + 8 = 17
+***** TEST.REF
+1 + 2 = 3
+1 - 2 = 99999999
+9 + 8 = 17
+*****
+
+***** test.out
+100 + 12 = 112
+100 - 12 = 98
+123 + 87 = 210
+123 - 87 = 46
+301 + 1 = 302
+***** TEST.REF
+100 + 12 = 112
+100 - 12 = 88
+123 + 87 = 210
+123 - 87 = 36
+301 + 1 = 302
+*****
+
+***** test.out
+1 + 1 = 2
+1 - 1 = 
+4 + 4 = 8
+4 - 4 = 
+***** TEST.REF
+1 + 1 = 2
+1 - 1 = 0
+4 + 4 = 8
+4 - 4 = 0
+*****
+
+make[1]: Leaving directory `C:/ROOT/7 - UM/PHD/CSC 421/Grading/Project 2-10-03-2023-12-21-47/sofia-frenk'
+
+---------- GRADE.TXT: 3.75/5
+Comments : Failed to implement 9’s complement which also resulted in the subtraction function not working
